@@ -19,9 +19,50 @@
 
 ## Phase 1: Core Platform (Jan 17 - Feb 28, 2026) - 6 Weeks
 
-### Theme: "Foundation & Family Collaboration"
+### Theme: "Premium AI-Powered Stories + Family Collaboration"
+
+**Strategic Shift**: Not just upload photos → Create AI-generated stories
+- Apple Award-level design (not cute, premium)
+- Image-to-Text AI (automatic storytelling)
+- Family sponsorship ready (MVP prep)
 
 ### Core Features
+
+#### 🤖 AI Storytelling (NEW - MVP Critical!)
+```
+✅ Automatic Story Generation (OpenAI GPT-4 Vision)
+├── Input: Photo + metadata (child's name, age, location)
+├── Analysis: What's happening in the photo
+├── Context: Child profile (Mert, 2 years, playful)
+├── Output: Beautiful Turkish story (150-300 words)
+├── Example:
+│   Input: [Photo of Mert eating ice cream on beach]
+│   Output: "15 Ağustos, Antalya plajında Mert ilk kez dondurma yedi.
+│            Tatının şaşkınlığı küçük yüzünde yaşanıyor. 
+│            Bu gün hava kusursuzdu ve o mutluydu."
+├── Parent approval: Edit/save/regenerate
+└── Archive: Story saved with photo forever
+
+✅ Cost Management
+├── API cost: ~₺0.05 per photo (GPT-4 Vision)
+├── Volume: 50K photos/month in Phase 1
+├── Monthly cost: ₺2,500 (acceptable)
+├── Margin: Subscription ₺1,999 >> ₺2,500 cost
+└── Scaling: Cost remains <2% of revenue
+
+✅ Quality Assurance
+├── Turkish fine-tuning: Family-appropriate narratives
+├── Cultural sensitivity: Turkish family values
+├── Testing: 1,000+ manual reviews before launch
+├── Iteration: Monthly feedback loop
+└── A/B testing: AI vs. manual captions (A/B test with 100 users)
+
+📈 Impact
+├── Time saving: 80% (parents don't write captions)
+├── Retention: +30% (better engagement with stories)
+├── Premium positioning: "Only Vera has AI storytelling"
+└── Differentiation: Google Photos can't do this
+```
 
 #### Photo Management
 ```
@@ -176,21 +217,23 @@ User Metrics:
 ├── 1,000+ beta signups
 ├── 500+ paid subscriptions
 ├── 50,000+ photos uploaded
-├── 80%+ photos with comments/tags
+├── 80%+ photos with AI stories
 └── 40%+ have family members invited
 
 Engagement:
 ├── 60%+ MAU (monthly active users)
-├── 4+ photos per user per week average
+├── 4+ stories per user per week average
 ├── 3+ family members per family average
 ├── 20%+ use family upload feature
-└── 30+ photos in shared family album
+├── 30+ photos in shared family album
+└── **4.8+ app rating** (premium design + AI quality)
 
 Business Metrics:
-├── ₺1,000,000 MRR
-├── <5% monthly churn
+├── ₺1,000,000 MRR (higher than Phase 1 original!)
+├── <5% monthly churn (AI storytelling stickiness!)
 ├── 3:1 ratio of Standard:Premium
-└── 50+ albums ordered
+├── 50+ albums ordered
+└── **Pricing validated**: ₺1,999/year works (not free!)
 ```
 
 ### Technical Deliverables
@@ -221,20 +264,119 @@ Business Metrics:
 
 ---
 
-## Phase 2: Advanced Features & Polish (Mar 1 - Apr 30, 2026) - 8 Weeks
+## Phase 2: Viral Growth & Network Effects (Mar 1 - Apr 30, 2026) - 8 Weeks
 
-### Theme: "Discoverability & Intelligence"
+### Theme: "Family Sponsorship + QR Viral Loop"
 
-### Features
+**Strategic Focus**: Network effect through family + physical product virality
 
-#### Search & Organization
+### New Features
+
+#### 👵 Family Sponsorship System (Growth Driver!)
+```
+✅ Sponsor Invitation
+├── Parent invites: "Ask Grandma to sponsor Mert's memories"
+├── Sponsor receives: "Help preserve [child]'s stories"
+├── Option: Annual (₺1,999) or monthly (₺166)
+├── Payment: Sponsor's card (parent doesn't pay)
+├── Celebration: "Fatma is sponsoring Mert's Premium memories!"
+└── Impact: New revenue + viral growth
+
+✅ Sponsor Benefits
+├── Recognition: "Supported by: Fatma, Yusuf, Ayşe"
+├── Updates: Weekly digest of new photos
+├── Annual gift: Thank you video from child (AI-generated)
+├── Choice: Public (braggable) or private
+└── Tax: Invoice for sponsor (gift documentation)
+
+✅ Network Effect Mechanics
+├── 500 paid users × 0.3 sponsors each = 150 new subscriptions
+├── CAC: Free (sponsor = existing family connection)
+├── Viral coefficient: 0.3 (sustainable, compounding)
+├── Result: 500 → 800 → 1,200 → 1,800 by end of Q2
+└── Additional revenue: ₺1.5M → ₺3M MRR
+
+📈 Expected Impact
+├── User acquisition: No CAC (viral)
+├── Retention: +50% (family pressure = stickiness)
+├── ARPU: +30% (multiple sponsors per family)
+└── Emotional lock-in: Family invested, can't churn
+```
+
+#### 📱 QR Code Viral Loop (Physical → Digital → Social)
+```
+✅ Printed Album with QR Code
+├── Inside cover: Scannable QR (2"x2")
+├── Leads to: Web version of album (no login needed)
+├── Design: "Tap to see [child]'s year in stories"
+└── Example: vera.app/album/unique-id-xyz
+
+✅ Web Sharing Experience
+├── View photos + AI-generated stories (beautiful)
+├── "Made with Vera" watermark
+├── Share to Instagram Story (template auto-generated)
+├── Share to Facebook (auto-post option)
+├── Direct download: PDF keepsake
+└── CTA: "Get Vera for your family"
+
+✅ Viral Mechanics
+├── Grandparent receives album
+├── Shows to 3-5 friends (bragging)
+├── Friends scan QR → See beautiful timeline
+├── "What app is this?" moment
+├── Friend downloads Vera
+├── Cost: Free CAC (from album printing margin)
+├── Tracking: QR analytics (scans, shares, conversions)
+└── Result: 50 albums/month × 5% = 2-3 new users per album
+
+📈 Expected Impact
+├── Print volume: 50 → 200 albums/month (4x)
+├── New users: 3 per album × 150 albums = 450 new users/month
+├── Paid conversion: 20% = 90 new subscriptions/month
+└── CAC: ₺0 (margin-positive from printing)
+```
+
+#### Advanced Search & Curation
 ```
 ✅ Advanced Search
-├── Full-text search (comments + tags)
+├── Full-text search (AI stories + tags)
 ├── Date range picker
 ├── Age range filter (0-3mo, 3-6mo, etc)
 ├── Tag-based search (exact + fuzzy)
 ├── Combination filters (date AND tag AND child)
+```
+
+### Success Metrics (Apr 30)
+
+```
+User Metrics:
+├── 5,000+ total signups (10x from Phase 1)
+├── 1,500+ paid subscriptions (3x)
+├── 300+ sponsored accounts (network effect proof!)
+├── 90%+ retention (sponsorship stickiness)
+└── 4.8+ app rating (maintained)
+
+Engagement:
+├── 70%+ MAU
+├── 5+ stories per user per week (AI addictive!)
+├── 200+ albums printed per month
+├── 1,000+ QR code scans per month
+├── 50+ social shares per week
+└── Viral coefficient: 0.3 (sustainable)
+
+Business Metrics:
+├── ₺3,000,000 MRR (subscription + prints)
+├── <2% monthly churn (best-in-class!)
+├── CAC: ₺150 (down from ₺300, viral!)
+├── LTV: ₺35,000 (lifetime value)
+└── **Series A Ready**: Clear unit economics + growth + retention
+```
+
+---
+
+### ORIGINAL PHASE 2 FEATURES (Adjusted to Priority)
+
+#### Search & Organization
 ├── Saved searches (quick access to common ones)
 └── Search history (recent searches)
 
