@@ -5,11 +5,13 @@
 ### Stack Choice: **Next.js + React Native Expo**
 
 **Neden:**
+
 - Next.js: SSR, API routes (backend kısaltır), deployment kolay (Vercel)
 - React Native Expo: iOS/Android aynı code, app store submit kolay
 - Shared component library: Veri tutarlılığı
 
 **Dependencies:**
+
 ```
 Frontend Core:
 ├── next.js 14.x (web)
@@ -23,7 +25,9 @@ Upload & Media:
 ├── react-dropzone
 ├── react-image-crop
 ├── sharp (image optimization)
-└── ffmpeg (video encoding)
+├── ffmpeg (video encoding)
+├── remotion (programmatic video creation)
+└── @remotion/player (video preview)
 
 Forms:
 ├── react-hook-form
@@ -31,6 +35,7 @@ Forms:
 ```
 
 **Timeline:**
+
 - Prototip: 2 hafta
 - 80% feature complete: 4 hafta
 - Push to TestFlight/Play Store: 5. hafta
@@ -42,11 +47,13 @@ Forms:
 ### Stack Choice: **Node.js + Express + TypeScript**
 
 **Neden:**
+
 - Hızlı (startup için ideal)
 - JavaScript shared (frontend'le code reuse)
 - Scalable (worker threads, clustering)
 
 **Dependencies:**
+
 ```
 Runtime:
 ├── node.js 20.x
@@ -78,6 +85,7 @@ Job Queue:
 ```
 
 **Architecture:**
+
 ```
 src/
 ├── controllers/     (business logic)
@@ -89,6 +97,7 @@ src/
 ```
 
 **Timeline:**
+
 - Auth setup: 3 gün
 - Core APIs (child, photos, tags): 1 hafta
 - Search/filter: 3 gün
@@ -101,6 +110,7 @@ src/
 ### PostgreSQL 15 + Prisma ORM
 
 **Schema (Temel):**
+
 ```sql
 users
 ├── id, email, password_hash
@@ -139,6 +149,7 @@ subscriptions
 ### AWS S3 (Primary) + CloudFront (CDN)
 
 **Folder Structure:**
+
 ```
 s3://vera-app/
 ├── users/{user_id}/
@@ -147,6 +158,7 @@ s3://vera-app/
 ```
 
 **Optimization:**
+
 - Originals: JPEG 85%, WebP 75%
 - Thumbnails: 300x300 JPG
 - CDN cache: 30 gün
@@ -158,6 +170,7 @@ s3://vera-app/
 ### Stripe (Primary) + İyzico (Fallback)
 
 **Flow:**
+
 ```
 1. Next.js API route (/api/checkout)
 2. Stripe Checkout Session
@@ -167,6 +180,7 @@ s3://vera-app/
 ```
 
 **Recurring:**
+
 - Yearly billing (default)
 - Renewal 30 gün önce email
 - Stripe Portal: self-serve cancel
@@ -196,6 +210,7 @@ Monitoring:
 ```
 
 **Cost (Yıl 1):**
+
 - Railway: ₺3K/ay
 - AWS S3: ₺500/ay (1000 user, 10GB/user = 10TB)
 - Stripe: 2.9% + $0.30

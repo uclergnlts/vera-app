@@ -108,6 +108,8 @@ Bu sayede anılar sadece saklanmaz, **anlatılır**.
 - Favori anlar
 - Yıl sonu özetleri
 - AI destekli anı seçimi (ileriki aşama)
+- **Tek tıkla müzikli video oluşturma (Reels/TikTok)**
+- **Sosyal medya için hazır paylaşım şablonları**
 
 ---
 
